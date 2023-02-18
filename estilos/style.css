@@ -1,14 +1,17 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('../fontes/LibreFranklin-VariableFont_wght.ttf') format('truetype');
+}
+
 :root{
-    
     --cor1: #2F344E;
     --cor2: #CBCEE1;
     --cor3: #6570A8;
 
-    --fonte_padrao: arial, sans-serif
-
-
+    --fonte_padrao: arial, sans-serif;
+    --fonte_titulo: Libre Franklin;
 }
 
 * {
@@ -22,18 +25,25 @@ html, body {
 }
 
 header {
+    font-family: var(--fonte_titulo);
     color: var(--cor2);
     background-color: var(--cor1);
 }
 
 header > h1 {
+    padding-top: 10px;
     text-align: center;
 }
 
 header > a {
     text-decoration: none;
     color: var(--cor2);
+
 }
 
-main {
+header > p {
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bolder;
 }
+
