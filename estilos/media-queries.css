@@ -4,6 +4,9 @@
     header > p {
         font-size: 2em;
     }
+    header > p#Zag{
+        font-size: 1.6em;
+    }
     menu {
         font-size: 1.3em;
     }
@@ -20,6 +23,9 @@
 @media screen and (min-width: 992px) {
     header > p {
         font-size: 2.5em;
+    }
+    header > p#Zag{
+        font-size: 2em;
     }
     menu {
         font-weight: bolder;
