@@ -1,49 +1,130 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'Libre Franklin';
-    src: url('../fontes/LibreFranklin-VariableFont_wght.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 :root{
-    --cor1: #2F344E;
+    --cor1: #2f344e2a;
     --cor2: #CBCEE1;
-    --cor3: #6570A8;
+    --cor3: #54609c;
 
-    --fonte_padrao: arial, sans-serif;
-    --fonte_titulo: Libre Franklin;
+    --fonte-titulo: 'PT Serif', serif;
+    --fonte-texto: 'Martian Mono', monospace;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html, body {
+    overflow-x: hidden;
     height: 100vh;
     width: 100vw;
+    background-image: url('../imagens/fundo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 
-header {
-    font-family: var(--fonte_titulo);
+header{
     color: var(--cor2);
     background-color: var(--cor1);
 }
 
 header > h1 {
+    font-family: var(--fonte-titulo);
     padding-top: 10px;
+    font-size: 3em;
     text-align: center;
+    
 }
 
-header > a {
-    text-decoration: none;
+header a {
     color: var(--cor2);
+}
 
+header a:hover {
+    color: var(--cor3);
 }
 
 header > p {
+    font-size: 1.4em;
     padding-top: 10px;
+    margin-bottom: 20px;
     text-align: center;
     font-weight: bolder;
 }
 
+
+menu {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+li {
+    display: inline-block;  
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 0.1s;
+
+}
+
+li:hover {
+    background-color: var(--cor2);
+    color: black;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    margin: auto;
+}
+
+section {
+    box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.534);
+}
+
+section > p {
+    margin: auto;
+    text-align: justify;
+    max-width: 768px;
+    font-family: var(--fonte-texto);
+    font-size: 1.1em;
+    line-height: 2em;
+    padding: 20px;
+}
+
+section#normal {
+    margin: auto;
+    color: black;
+    background-color: var(--cor2);
+}
+
+section#imagem {
+    color: white
+}
+
+footer {
+    background-color: #535f97d7;
+    text-align: center;
+    font-weight: bold;
+    color: var(--cor2);
+}
+footer > p > a {
+    color: var(--cor2);
+}
+
+footer> p > a:hover {
+    color: var(--cor3);
+}
+
+a {
+    text-decoration: none;
+}
