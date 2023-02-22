@@ -67,6 +67,7 @@ header > p#Zag{
 }
 
 menu {
+    margin-top: 57px;
     display: inline-block;
     font-weight: bolder;
     font-size: 1em;
@@ -86,51 +87,11 @@ li:hover {
     color: black;
 }
 
-main {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100vw;
-    margin: auto;
-}
-
-section {
-    box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.534);
-}
-
-section > p {
-    margin: auto;
-    text-align: center;
-    max-width: 768px;
-    font-family: var(--fonte-texto);
-    font-size: 3.7vw;
-    line-height: 3em;
-    padding: 1vw;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.322);
-}
-
-section#normal {
-    margin: auto;
-    color: black;
-    background-color: var(--cor2);
-}
-
-section#imagem {
-    color: white
-}
-
-footer {
-    background-color: #535f97d7;
-    text-align: center;
-    font-weight: bold;
-    color: var(--cor2);
-}
-footer > p > a {
-    color: var(--cor2);
-}
-
-footer> p > a:hover {
-    color: var(--cor3);
-}
-
 a {
     text-decoration: none;
+}
+
+main {
+    height: 100vh;
+    background-color: var(--cor2);
 }
