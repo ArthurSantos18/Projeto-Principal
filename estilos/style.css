@@ -5,7 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
-:root{
+:root {
     --cor1: #2f344e2a;
     --cor2: #CBCEE1;
     --cor3: #54609c;
@@ -62,7 +62,7 @@ header > p {
     font-weight: bolder;
 }
 
-header > p#Zag{
+header > p#Zag {
     font-size: 1.3em;
 }
 
@@ -72,7 +72,7 @@ menu {
     font-size: 1em;
 }
 
-li {
+header li {
     display: inline-block;  
     padding: 10px;
     padding-right: 20px;
@@ -81,7 +81,7 @@ li {
 
 }
 
-li:hover {
+header li:hover {
     background-color: var(--cor2);
     color: black;
 }
