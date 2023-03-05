@@ -11,23 +11,19 @@
         font-size: 1.6em;
     }
     menu {
+        margin-top: 60px;
         font-size: 1.3em;
     }
-    section > p {
-        font-size: 2.5vw;
-      
-    }
+
     footer {
         font-size: 1.4em;
-        
     }
 }
 
 @media screen and (min-width: 992px) {
-    header{
+    header {
         height: 35.7%;
     }
-
     header > p {
         font-size: 2.5em;
     }
@@ -35,16 +31,25 @@
         font-size: 2em;
     }
     menu {
+        margin-top: 67px;
         font-weight: bolder;
         font-size: 1.5em;
     }
-    section > p {
-        font-size: 2vw;
-      
+
+    div#python{
+        margin-left: 3%;
     }
+    
+    div#python > img {
+        height: 350px;
+    }
+    
+    div#login > img {
+        height: 350px;
+    }
+
     footer {
         font-size: 1.5em;
-        
     }
 }
 

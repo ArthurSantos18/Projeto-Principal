@@ -34,7 +34,7 @@ html, body {
 }
 
 header {
-    height: 18vw;
+    height: 27.8%;
     color: var(--cor2);
     background-color: var(--cor1);
 }
@@ -42,7 +42,7 @@ header {
 header > h1 {
     font-family: var(--fonte-titulo);
     padding-top: 10px;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     
 }
@@ -56,23 +56,17 @@ header a:hover {
 }
 
 header > p {
-    font-size: 1.4em;
+    font-size: 1.3em;
     padding-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     font-weight: bolder;
 }
 
-header > p#Zag{
-    font-size: 1.3em;
-}
-
 menu {
-    margin-top: 57px;
-    display: inline-block;
-    height: 50px;
+    margin-top: 48px;
     font-weight: bolder;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 header li {
@@ -96,6 +90,7 @@ a {
 main {
     background-color: var(--cor2);
     padding-bottom: 30px;
+    box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.534);
 }
 
 main > a > div {
@@ -113,8 +108,8 @@ main > div:hover {
     background-color: rgba(0, 0, 0, 0.068);
 }
 
-div#python{
-    margin-left: 10%;
+main {
+    text-align: center;
 }
 
 div#python > img {
